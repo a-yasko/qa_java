@@ -3,11 +3,8 @@ import java.util.List;
 
 public class LionAlex extends Lion {
 
-    private static final String sex = "Самец";
-    boolean hasMane;
-
     public LionAlex() throws Exception {
-        super(sex);
+        super("Самец", new Feline());
         this.hasMane = true;
     }
 
@@ -21,7 +18,7 @@ public class LionAlex extends Lion {
 
     @Override
     public int getKittens() {
-        return getKittens(0);
+        return 0;
     }
 
 }
